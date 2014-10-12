@@ -5,3 +5,5 @@ class Dot(object):
     def backup_dotfiles(self):
         pass
 
+    def create_symlinks(self):
+        pass
