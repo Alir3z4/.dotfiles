@@ -1,0 +1,2 @@
+class Dot(object):
+    pass
