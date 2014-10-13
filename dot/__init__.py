@@ -1,6 +1,11 @@
+import os
+from dot import config
+
+
 class Dot(object):
     def initialize_dotfiles_dir(self):
-        pass
+        if not os.path.exists(config.DOTFILES_DIR):
+            os.makedirs(config.DOTFILES_DIR)
 
     def backup_dotfiles(self):
         pass
