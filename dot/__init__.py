@@ -1,3 +1,4 @@
+import logging
 import os
 from dot import config
 
@@ -8,7 +9,8 @@ class Dot(object):
             os.makedirs(config.DOTFILES_DIR)
 
     def backup_dotfiles(self):
-        pass
+        for dot_file in config.DOTFILES:
+            os.system('mv {0} {1}'.format(dot_file, config.DOTFILES_DIR_BACKUP))
 
     def create_symlinks(self):
         for dot_file in config.DOTFILES:
