@@ -8,4 +8,5 @@ DOTFILES = (
     '~/.bash_profile',
     '~/.vimrc',
     '~/.gitconfig',
+    '~/.conkyrc',
 )
