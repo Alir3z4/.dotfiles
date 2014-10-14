@@ -7,4 +7,5 @@ DOTFILES = (
     '~/.bashrc',
     '~/.bash_profile',
     '~/.vimrc',
+    '~/.gitconfig',
 )
