@@ -9,4 +9,5 @@ DOTFILES = (
     '~/.vimrc',
     '~/.gitconfig',
     '~/.conkyrc',
+    '~/.aliases',
 )
