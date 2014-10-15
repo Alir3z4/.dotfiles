@@ -59,7 +59,7 @@ export LESS='-i -N -w  -z-4 -g -e -M -X -F -R -P%t?f%f \
 
 . /etc/profile.d/ksshaskpass.sh
 
-. ~/.functions
+. ~/.functions.sh
 . ~/.aliases
 
 
