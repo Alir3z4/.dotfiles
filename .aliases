@@ -35,34 +35,42 @@ alias tree='tree -Csu'     # nice alternative to 'recursive ls'
 
 # actions
 alias packill='sudo rm -rf /var/lib/pacman/db.lck'
+
 # programs
 alias y="yaourt"
 alias chrome-allow-local='chromium --allow-file-access-from-files'
 alias gwt='/home/alireza/dev/gwt-2.4.0/webAppCreator'
+
 # Django stuff =))
 alias dj-admin='django-admin.py'
 alias dj='python manage.py'
 alias fake-smtp='python -m smtpd -n -c DebuggingServer localhost:1025'
+
 # files
 alias ob-rc='~/.config/openbox/rc.xml'
 alias ob-autostart='~/.config/openbox/autostart'
 alias ob-menu='~/.config/openbox/menu.xml'
+
 # mods
 alias vmod="sudo modprobe vboxdrv && sudo modprobe vboxnetflt && sudo modprobe vboxnetadp"
+
 # networkmanager
 alias stop-net="sudo /etc/rc.d/networkmanager stop"
 alias start-net="sudo /etc/rc.d/networkmanager start"
 alias restart-net="sudo /etc/rc.d/networkmanager restart"
+
 # cups printer
 alias stop-cups="sudo /etc/rc.d/cupsd stop"
 alias start-cups="sudo /etc/rc.d/cupsd start"
 alias restart-cups="sudo /etc/rc.d/cupsd restart"
 alias status-cups="sudo /etc/rc.d/cupsd status"
-# mysqld
+
+# MySQL
 alias stop-mysql="sudo systemctl stop mysqld"
 alias start-mysql="sudo systemctl start mysqld"
 alias restart-mysql="sudo systemctl restart mysqld"
-# postgresql
+
+# PostgreSQL
 alias stop-postgres="sudo rc.d stop postgresql"
 alias start-postgres="sudo rc.d start postgresql"
 alias restart-postgres="sudo rc.d restart postgresql"
