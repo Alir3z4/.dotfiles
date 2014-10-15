@@ -25,3 +25,4 @@ PS1='[\u@\h \W]\$ '
 
 . ~/.functions.sh
 . ~/.aliases
+. ~/.bash_completion.sh
