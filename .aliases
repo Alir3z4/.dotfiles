@@ -73,6 +73,8 @@ alias unfuckable='ssh-wf -D 1080 -N'
 alias update_mirrorlist='reflector --verbose -l 13 --sort rate --save /etc/pacman.d/mirrorlist'
 alias start-vms='VBoxHeadless --startvm "ubuntu-server-1" & VBoxHeadless --startvm "ubuntu-server-2" & VBoxHeadless --startvm "ubuntu-server-3" &'
 alias stop-vms='VBoxManage controlvm "ubuntu-server-1" poweroff & VBoxManage controlvm "ubuntu-server-2" poweroff & VBoxManage controlvm "ubuntu-server-3" poweroff &'
+# samba
+alias start-samba='sudo systemctl start smbd && sudo systemctl start nmbd'
 
 # aliases that use xtitle
 alias top='xtitle Processes on $HOST && top'
