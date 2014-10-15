@@ -44,47 +44,11 @@ export USERSHARES_GROUP="sambashare"
 export ANDROID_BIN=/home/alireza/dev/apps/android-sdk-linux/tools/android
 export ANSIBLE_HOSTS=~/ansible_hosts
 
-#--------------------------------------------------
-# ALIASES
-#---------------------------------------------------
-
-alias rm='rm -i'
-#alias cp='cp -i'
-alias mv='mv -i'
-# -> Prevents accidentally clobbering files.
-alias mkdir='mkdir -p'
-
-alias h='history'
-alias j='jobs -l'
-
-alias du='du -kh'       # Makes a more readable output.
-alias df='df -kTh'
-
-#-------------------------------------------------------------
-# The 'ls' family (this assumes you use a recent GNU ls)
-#-------------------------------------------------------------
-alias ll="ls -l --group-directories-first"
-alias ls='ls -hF --color'  # add colors for filetype recognition
-alias la='ls -Al'          # show hidden files
-alias lx='ls -lXB'         # sort by extension
-alias lk='ls -lSr'         # sort by size, biggest last
-alias lc='ls -ltcr'        # sort by and show change time, most recent last
-alias lu='ls -ltur'        # sort by and show access time, most recent last
-alias lt='ls -ltr'         # sort by date, most recent last
-alias lm='ls -al |more'    # pipe through 'more'
-alias lr='ls -lR'          # recursive ls
-alias tree='tree -Csu'     # nice alternative to 'recursive ls'
-
-# If your version of 'ls' doesn't support --group-directories-first try this:
-# function ll(){ ls -l "$@"| egrep "^d" ; ls -lXB "$@" 2>&-| \
-#                egrep -v "^d|total "; }
-
 
 #-------------------------------------------------------------
 # tailoring 'less'
 #-------------------------------------------------------------
 
-alias more='less'
 export PAGER=less
 export LESSCHARSET='latin1'
 export LESSOPEN='|/usr/bin/lesspipe.sh %s 2>&-'
@@ -94,48 +58,6 @@ export LESS='-i -N -w  -z-4 -g -e -M -X -F -R -P%t?f%f \
 
 
 . /etc/profile.d/ksshaskpass.sh
-
-
-# actions
-alias packill='sudo rm -rf /var/lib/pacman/db.lck'
-# programs
-alias y="yaourt"
-alias chrome-allow-local='chromium --allow-file-access-from-files'
-alias gwt='/home/alireza/dev/gwt-2.4.0/webAppCreator'
-# Django stuff =))
-alias dj-admin='django-admin.py'
-alias dj='python manage.py'
-alias fake-smtp='python -m smtpd -n -c DebuggingServer localhost:1025'
-# files
-alias ob-rc='~/.config/openbox/rc.xml'
-alias ob-autostart='~/.config/openbox/autostart'
-alias ob-menu='~/.config/openbox/menu.xml'
-# mods
-alias vmod="sudo modprobe vboxdrv && sudo modprobe vboxnetflt && sudo modprobe vboxnetadp"
-# networkmanager
-alias stop-net="sudo /etc/rc.d/networkmanager stop"
-alias start-net="sudo /etc/rc.d/networkmanager start"
-alias restart-net="sudo /etc/rc.d/networkmanager restart"
-# cups printer
-alias stop-cups="sudo /etc/rc.d/cupsd stop"
-alias start-cups="sudo /etc/rc.d/cupsd start"
-alias restart-cups="sudo /etc/rc.d/cupsd restart"
-alias status-cups="sudo /etc/rc.d/cupsd status"
-# mysqld
-alias stop-mysql="sudo systemctl stop mysqld"
-alias start-mysql="sudo systemctl start mysqld"
-alias restart-mysql="sudo systemctl restart mysqld"
-# postgresql
-alias stop-postgres="sudo rc.d stop postgresql"
-alias start-postgres="sudo rc.d start postgresql"
-alias restart-postgres="sudo rc.d restart postgresql"
-alias status-posgresql="sudo rc.d status postgresql"
-alias start-mongodb='sudo systemctl start mongodb'
-alias pn="ping google.com"
-alias unfuckable='ssh-wf -D 1080 -N'
-alias update_mirrorlist='reflector --verbose -l 13 --sort rate --save /etc/pacman.d/mirrorlist'
-alias start-vms='VBoxHeadless --startvm "ubuntu-server-1" & VBoxHeadless --startvm "ubuntu-server-2" & VBoxHeadless --startvm "ubuntu-server-3" &'
-alias stop-vms='VBoxManage controlvm "ubuntu-server-1" poweroff & VBoxManage controlvm "ubuntu-server-2" poweroff & VBoxManage controlvm "ubuntu-server-3" poweroff &'
 
 
 #-------------------------------------------------------------
@@ -153,10 +75,9 @@ function xtitle()      # Adds some text in the terminal frame.
     esac
 }
 
-# aliases that use xtitle
-alias top='xtitle Processes on $HOST && top'
-alias make='xtitle Making $(basename $PWD) ; make'
-alias ncftp="xtitle ncFTP ; ncftp"
+
+. ~/.aliases
+
 
 # .. and functions
 function man()
