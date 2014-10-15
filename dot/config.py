@@ -10,4 +10,5 @@ DOTFILES = (
     '~/.gitconfig',
     '~/.conkyrc',
     '~/.aliases',
+    '~/.functions.sh',
 )
