@@ -11,4 +11,5 @@ DOTFILES = (
     '~/.conkyrc',
     '~/.aliases',
     '~/.functions.sh',
+    '~/.exports.sh'
 )
