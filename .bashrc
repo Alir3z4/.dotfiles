@@ -20,6 +20,7 @@ NC='\e[0m'              # No Color
 PS1='[\u@\h \W]\$ '
 
 
+. ~/.exports.sh
 . /etc/profile.d/ksshaskpass.sh
 
 . ~/.functions.sh
