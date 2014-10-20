@@ -12,6 +12,9 @@
 [diff]
 	# Detect copies as well as renames
 	renames = copies
+[help]
+	# Automatically correct and execute mistyped commands
+	autocorrect = 1
 [color]
 	branch = auto
 	diff = auto
