@@ -20,11 +20,6 @@ function man()
     done
 }
 
-
-#-------------------------------------------------------------
-# File & string-related functions:
-#-------------------------------------------------------------
-
 # cut last n lines in file, 10 by default
 function cuttail()
 {
@@ -77,9 +72,6 @@ function extract()
      fi
 }
 
-#-------------------------------------------------------------
-# Process/system related functions:
-#-------------------------------------------------------------
 
 
 function my_ps() { ps $@ -u $USER -o pid,%cpu,%mem,bsdtime,command ; }
@@ -129,11 +121,6 @@ function ii()
     echo -e "\n${RED}Open connections :$NC "; netstat -pan --inet;
     echo
 }
-
-#-------------------------------------------------------------
-# Misc utilities:
-#-------------------------------------------------------------
-
 
 # Repeat n times command.
 function repeat()
