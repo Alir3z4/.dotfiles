@@ -9,6 +9,9 @@
 [push]
 	default = simple
 
+[diff]
+	# Detect copies as well as renames
+	renames = copies
 [color]
 	branch = auto
 	diff = auto
