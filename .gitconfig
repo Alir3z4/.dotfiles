@@ -72,3 +72,4 @@
 	umaster = "!git checkout master && git pull origin master"
 	# Delete merged branches
 	delete-merged-branches = "!f() { git umaster && git branch --merged | grep -v '^* master$' | grep -v '^  master$' | xargs git branch -d ;}; f"
+	ec = config --global -e
