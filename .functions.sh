@@ -187,6 +187,7 @@ function scan_now()
   cd ~
   scanimage --device epson2:net:192.168.0.111 --format=tiff --mode color > $(date +"%y-%m-%d-%T").tiff
 }
+
 # Simple calculator
 function calc() {
 	local result="";
@@ -203,5 +204,10 @@ function calc() {
 		printf "$result";
 	fi;
 	printf "\n";
+}
+
+# Create a new directory and enter it
+function mkd() {
+	mkdir -p "$@" && cd "$@";
 }
 
