@@ -123,3 +123,7 @@
 	sl = stash list
 	sa = stash apply
 	ss = stash save
+	
+	# Show the diff between the latest commit and the current state
+	d = !"git diff-index --quiet HEAD -- || clear; git --no-pager diff --patch-with-stat"
+
