@@ -128,6 +128,10 @@
 	d = !"git diff-index --quiet HEAD -- || clear; git --no-pager diff --patch-with-stat"
 
 	
+
+	# List contributors with number of commits
+	contributors = shortlog --summary --numbered
+
 	# Divergence (commits we added and commits remote added)
 	div = divergence
 
