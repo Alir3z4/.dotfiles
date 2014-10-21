@@ -128,6 +128,9 @@
 	d = !"git diff-index --quiet HEAD -- || clear; git --no-pager diff --patch-with-stat"
 
 
+	# Find branches containing commit
+	fb = "!f() { git branch -a --contains $1; }; f"
+
 	# Find tags containing commit
 	ft = "!f() { git describe --always --contains $1; }; f"
 
