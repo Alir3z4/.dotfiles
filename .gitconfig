@@ -127,6 +127,8 @@
 	# Show the diff between the latest commit and the current state
 	d = !"git diff-index --quiet HEAD -- || clear; git --no-pager diff --patch-with-stat"
 
+	# Commit all changes
+	ca = !git add -A && git commit -av
 
 	# Show verbose output about tags, branches or remotes
 	tags = tag -l
