@@ -117,3 +117,5 @@
 	# Open editor on global config
 	ec = config --global -e
 	
+	# Show last tag
+	lt = describe --tags --abbrev=0
