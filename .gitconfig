@@ -101,6 +101,10 @@
 	grep = grep -Ii
 	gr = grep -Ii
 	
+	# Grep on root dir
+	gra = "!f() { A=$(pwd) && TOPLEVEL=$(git rev-parse --show-toplevel) && cd $TOPLEVEL && git grep --full-name -In $1 | xargs -I{} echo $TOPLEVEL/{} && cd $A; }; f"
+
+	
 	# output all aliases
 	la = "!git config -l | grep alias | cut -c 7-"
 	
