@@ -6,6 +6,7 @@
 	email = alireza.savand@gmail.com
 [cola]
 	fontdiff = Monospace,9,-1,5,50,0,0,0,0,0
+	editor = vim
 [push]
 	default = simple
 
