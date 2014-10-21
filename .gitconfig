@@ -113,4 +113,7 @@
 	
 	# Delete merged branches
 	delete-merged-branches = "!f() { git umaster && git branch --merged | grep -v '^* master$' | grep -v '^  master$' | xargs git branch -d ;}; f"
+	
+	# Open editor on global config
 	ec = config --global -e
+	
