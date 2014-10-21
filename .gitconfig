@@ -127,6 +127,10 @@
 	# Show the diff between the latest commit and the current state
 	d = !"git diff-index --quiet HEAD -- || clear; git --no-pager diff --patch-with-stat"
 
+	
+	# Divergence (commits we added and commits remote added)
+	div = divergence
+
 	# Goodness (summary of diff lines added/removed/total)
 	gn = goodness
 	gnc = goodness --cached
