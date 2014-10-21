@@ -118,3 +118,8 @@
 
 	# Show last tag
 	lt = describe --tags --abbrev=0
+	
+	# Stash List, Apply, Save
+	sl = stash list
+	sa = stash apply
+	ss = stash save
