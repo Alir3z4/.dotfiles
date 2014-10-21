@@ -127,5 +127,8 @@
 	# Show the diff between the latest commit and the current state
 	d = !"git diff-index --quiet HEAD -- || clear; git --no-pager diff --patch-with-stat"
 
+	# Goodness (summary of diff lines added/removed/total)
+	gn = goodness
+	gnc = goodness --cached
 [gui]
 	editor = vim
