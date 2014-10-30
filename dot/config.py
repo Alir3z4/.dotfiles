@@ -13,4 +13,5 @@ DOTFILES = (
     '~/.functions.sh',
     '~/.exports.sh',
     '~/.bash_completion.sh',
+    '~/.wgetrc'
 )
