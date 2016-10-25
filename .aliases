@@ -71,12 +71,12 @@ alias start-mysql="sudo systemctl start mysqld"
 alias restart-mysql="sudo systemctl restart mysqld"
 
 # PostgreSQL
-alias stop-postgres="sudo rc.d stop postgresql"
-alias start-postgres="sudo rc.d start postgresql"
-alias restart-postgres="sudo rc.d restart postgresql"
-alias status-posgresql="sudo rc.d status postgresql"
+alias stop-postgres="sudo systemctl stop postgresql"
+alias start-postgres="sudo systemctl start postgresql"
+alias restart-postgres="sudo systemctl restart postgresql"
+alias status-posgresql="sudo systemctl status postgresql"
 alias start-mongodb='sudo systemctl start mongodb'
-alias pn="ping google.com"
+alias pn="ping google.com -c3"
 alias unfuckable='ssh-wf -D 1080 -N'
 alias update_mirrorlist='reflector --verbose -l 13 --sort rate --save /etc/pacman.d/mirrorlist'
 alias start-vms='VBoxHeadless --startvm "ubuntu-server-1" & VBoxHeadless --startvm "ubuntu-server-2" & VBoxHeadless --startvm "ubuntu-server-3" &'
