@@ -176,5 +176,8 @@
 	# Goodness (summary of diff lines added/removed/total)
 	gn = goodness
 	gnc = goodness --cached
+
+	# Display the current branch
+	current-br = rev-parse --abbrev-ref HEAD
 [gui]
 	editor = vim
