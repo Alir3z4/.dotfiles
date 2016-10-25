@@ -105,9 +105,9 @@ function killps()
 # Get IP adresses.
 function my_ip()
 {
-    MY_IP=$(/sbin/ifconfig wlan0 | awk '/inet/ { print $2 } ' | \
+    MY_IP=$(/sbin/ifconfig wlp2s0 | awk '/inet/ { print $2 } ' | \
 sed -e s/addr://)
-    MY_ISP=$(/sbin/ifconfig wlan0 | awk '/P-t-P/ { print $3 } ' | \
+    MY_ISP=$(/sbin/ifconfig wlp2s0 | awk '/P-t-P/ { print $3 } ' | \
 sed -e s/P-t-P://)
 }
 
