@@ -88,3 +88,5 @@ alias start-samba='sudo systemctl start smbd && sudo systemctl start nmbd'
 alias top='xtitle Processes on $HOST && top'
 alias make='xtitle Making $(basename $PWD) ; make'
 alias ncftp="xtitle ncFTP ; ncftp"
+
+alias youtube-dl-mp3='youtube-dl --extract-audio --audio-format mp3'
